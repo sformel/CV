@@ -1,0 +1,351 @@
+%-------------------------
+% Resume in Latex
+% Original Template Author : Sourabh Bajaj
+% License : MIT
+% Document Author : Stephen K. Formel
+% Last updated : May 19, 2018
+%------------------------
+
+\documentclass[hidelinks,A4,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{helvet}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{array}
+\usepackage{biblatex}
+\usepackage{ragged2e}
+\usepackage{lastpage}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%add page number
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+% Adjust margins
+\usepackage[margin=0.75in]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{sformel.github.io/}{\Large Stephen K. Formel}} & Curriculum Vitae\\
+  221 Claiborne Court & Email : \href{mailto:steveformel@gmail.com}{steveformel@gmail.com}\\
+  Jefferson, LA 70121 & \href{sformel.github.io/}{Website: sformel.github.io}\\
+  Cell : 917-972-7947 \\
+  
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tulane University}{New Orleans, LA}
+      {PhD in Ecology and Evolutionary Biology under Dr. Sunshine Van Bael}{Aug. 2015 to Present}
+    \resumeSubheading
+      {Hunter College}{New York, NY}
+      {BA in Biological Sciences, Magna Cum Laude}{June 2015}
+      \resumeSubheading
+      {Rochester Institute of Technology}{Rochester, NY}
+      {BFA in Film and Animation}{June 2004}
+  \resumeSubHeadingListEnd
+
+
+%-----------Past Research Experience-----------------
+\section{Past Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Hunter College - Lab of Dr. Diana P. Bratu}{New York, NY}
+      {Research Assistant}{Oct 2012 to July 2015}
+    \resumeSubheading
+      {Marine Biological Laboratory - Lab of Dr. Scott Brady}{Woods Hole, MA}
+      {Research Assistant}{Summers of 2013 and 2014}
+  \resumeSubHeadingListEnd
+      
+%------------------Awards----------------------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Louisiana Environmental Education Commission Grant}
+      {Spring 2017}{\$1200}{}
+      
+    \resumeSubheading
+      {Tulane EEB Department Graduate Research Grant}
+      {Winter 2016}{\$1834}{}
+      
+    \resumeSubheading
+      {NSF Graduate Research Fellowship}
+      {Spring 2016}{\$138,000}{}
+	
+	\resumeSubheading
+      {Garden Club of America Wetlands Scholarship}
+      {Spring 2016}{\$5000}{}
+      
+    \resumeSubheading
+      {Louisiana Board of Regents Fellowship}
+      {Fall 2015}{\$120,000}{}
+      
+    \resumeSubheading
+      {Else Seringhaus Award for Excellence in Research in Biological Sciences}
+      {Spring 2015}{\$150}{}
+      
+    \resumeSubheading
+      {Hunter College Undergraduate Research Fellowship}
+      {Spring 2015}{\$1200}{}
+      
+    \resumeSubheading
+      {HHMI Summer Undergraduate Scholarship}
+      {Summer 2013}{\$6000}{}
+    
+    \resumeSubHeadingListEnd
+
+%------------------Publications---------------------------
+
+\section{Publications}
+  
+
+    Formel, S. K., Mighell, K.L., Bernik, B.M., Kandalepas, D., Jarrell, E., Blum, M.J., Pardue, J., Van Bael, S.A. 
+    \textit{Soil Microbial Communities of Two Salt Marshes in Recovery Following an Oil Spill}. 
+    manuscript in preparation.
+
+    Bayer, L. V., Batish, M., Formel, S. K., and Bratu, D. P. (2015). Single-Molecule RNA In Situ Hybridization (smFISH) and Immunofluorescence (IF) in the Drosophila Egg Chamber. 
+    \textit{Drosophila Oogenesis: Methods and Protocols, 125-136.}
+   
+
+   
+%----------Poster Presentations---------------------------
+
+\section{Poster Presentations}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Society of Wetland Scientists Annual Meeting}
+      {2017}{"Soil Microbial Communities of Two Salt Marshes in Recovery Following an Oil Spill"}{}
+      
+    \resumeSubheading
+      {American Society of Microbiology Annual Meeting}
+      {2017}{"Soil Microbial Communities of Two Salt Marshes in Recovery Following an Oil Spill"}{}
+      
+    \resumeSubheading
+      {Gulf of Mexico Research Initiative (GoMRI) Annual Meeting}
+      {2017}{"Diversity of Salt Marsh Soil Microbial Communities After Oil Exposure"}{}
+      
+    \resumeSubheading
+      {ESA Annual Meeting}
+      {2016}{"Diversity of Salt Marsh Soil Microbial Communities After Oil Exposure"}{}
+
+    \resumeSubheading
+      {Hunter College Undergraduate Research Conference}
+      {2015 }{"Visualizing the Dynamic Composition of oskar mRNP during Drosophila melanogaster Oogenesis"}{}
+      
+    \resumeSubheading
+      {Translational Control Meeting at Cold Spring Harbor Laboratory}
+      {2014}{"Visualizing the Dynamic Composition of oskar mRNP during \textit{Drosophila melanogaster} Oogenesis"}{}
+ 	
+ 	\resumeSubheading
+      {Hunter College Undergraduate Research Conference}
+      {2014}{"Using Squid to Study the Pathogenic Pathway of Mutant SOD1 in ALS"}{} 
+
+    \resumeSubHeadingListEnd
+
+%----------Oral Presentations---------------------------
+
+\section{Oral Presentations}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Invited lecture to the Garden Club of America, New Orleans Chapter}
+      {2017}{"Little Things Matter Too: The Potential Role of Microbes in Salt Marsh Conservation"}{}
+      
+    \resumeSubheading
+      {MBL Undergraduate Research Symposium}
+      {2013}{"Searching for the Missing Link in the Pathogenic Pathway of Mutant SOD1 in ALS"}{}
+
+    \resumeSubheading
+      {Hunter College Summer Undergraduate Research Symposium}
+      {2013}{"Searching for the Missing Link in the Pathogenic Pathway of Mutant SOD1 in ALS"}{}
+      
+    \resumeSubHeadingListEnd
+
+%----------Teaching---------------------------
+
+\section{Teaching}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Teaching Assistant: Diversity of Life}
+      {Fall 2017}{Taught two lab sections}{}
+      
+    \resumeSubheading
+      {Teaching Assistant: Theory and Methods in Ecology and Evolutionary Biology}
+      {Spring 2018}{Assisted with Lectures and Grading}{}
+    
+    \resumeSubheading
+      {Guest Lecture: Conservation Biology}{Spring 2018}
+      {Economic Aspects of Conservation}{}
+      
+    \resumeSubheading
+      {Guest Lecture: Insect Biology}
+      {Fall 2015}{Ecosystem Services of Insects}{}
+      
+    \resumeSubheading
+      {Guest Lecture: Genomics}{Spring 2018}
+      {Introduction to Metagenomics Software and Analysis, designed and taught lab and homework}{}
+     
+    \resumeSubHeadingListEnd
+
+\pagebreak
+
+%----------Service---------------------------
+
+\section{Service}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheadingTwo
+      {Sci High High School Science Fair Judge}
+      {Oct 2017}
+      
+    \resumeSubheadingTwo
+      {Ecolunch Seminar Coordinator}
+      {Sept 2016 to Present}
+    
+    \resumeSubheadingTwo
+      {CREEP Vice President}
+      {Sept 2016 to Sept 2017 }
+    
+    \resumeSubheadingTwo
+      {Workshop leader for "Boys at Tulane in STEM" (BATS)}
+      {Sept 2017}
+      
+    \resumeSubheading
+      {Led storytelling workshop for graduate students and faculty}{Mar 2017}{Ecology and Evolutionary Biology Dept. at Tulane University}{}
+    
+    \resumeSubheadingTwo
+      {Workshop leader for "Boys At Tulane in STEM" (BATS) for 5th -7th grade boys}
+      {Oct 2016}
+    
+    \resumeSubheadingTwo
+      {Lecture at Ursuline Academy (high school) on symbiosis and biodiversity}
+      {Aug 2016}
+    
+    \resumeSubheadingTwo
+      {Supported workshop at "Girls in STEM at Tulane" (GIST) for 5th -7th grade girls}
+      {Mar2016}
+    
+    \resumeSubheading
+      {Labor for bald cypress swamp restoration project}
+      {Dec 2015}{with Coalition to Restore Coastal Louisiana (CRCL)}{}
+    
+    \resumeSubheadingTwo
+      {Judge for New Orleans Charter Science and Math High School Science Fair}
+      {Dec 2015}
+    
+    \resumeSubheadingTwo
+      {Supported workshop at "Girls in STEM at Tulane" (GIST) for 5th -7th grade girls}
+      {Nov 2015}
+      
+    \resumeSubHeadingListEnd
+
+%----------Career Goals---------------------------
+
+\section{Career Goals}
+
+During my undergraduate career, I focused on gaining a solid grasp of lab benchwork, cellular biology and molecular genetics.  In my PhD I am integrating that knowledge with my interest in community dynamics and love for coastal wetlands. My immediate career goals are to add to our knowledge of endophyte community interactions and to contribute to wetland science and ecology by completing a thorough and rigorous study of the endophytes of \textit{Spartina alterniflora} in the Gulf of Mexico.  In the first three years of my doctoral studies I have found myself drawn to the theoretical and technical questions of the data science underlying metagenomic community analysis. Over the next 2 years I look to improve my knowledge of bioinformatics and data science and to use all of my skills to actively participate in the science community as well as in communicating science to the public, in preparation of my long-term goal to work as a research scientist and teacher. 
+
+%----------References---------------------------
+
+\section{References}
+
+\begin{tabular}{p{2.5in}>{\RaggedRight}p{2.5in}>{\RaggedRight}p{2.5in} }
+Dr. Sunshine Van Bael \newline
+504-862-8291 \newline
+svanbael@tulane.edu \newline
+6823 St. Charles Avenue, \newline
+Suite 400 Boggs \newline
+Department of Ecology \newline
+and Evolutionary Biology \newline
+New Orleans, LA 70118 &
+Dr. Diana Bratu \newline
+(212) 772-5235 \newline
+bratu@genectr.hunter.cuny.edu \newline
+Department of Biological Science Hunter College \newline
+Room 904 Hunter North \newline
+695 Park Avenue, New York, \newline 
+NY 10065 \newline &
+Dr. Scott Brady \newline
+312-996-3313 \newline
+stbrady@uic.edu \newline
+Rm CME 567C \newline
+University of Illinois at Chicago \newline
+Chicago, IL 60612\\
+
+\end{tabular}
+
+
+
+    
+\end{document}
