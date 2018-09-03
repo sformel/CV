@@ -93,8 +93,8 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{sformel.github.io/}{\Large Stephen K. Formel}} & Curriculum Vitae\\
-  221 Claiborne Court & Email : \href{mailto:steveformel@gmail.com}{steveformel@gmail.com}\\
-  Jefferson, LA 70121 & \href{sformel.github.io/}{Website: sformel.github.io}\\
+  Email : \href{mailto:steveformel@gmail.com}{steveformel@gmail.com}\\
+  \href{sformel.github.io/}{Website: sformel.github.io}\\
   Cell : 917-972-7947 \\
   
 \end{tabular*}
@@ -129,6 +129,11 @@
 %------------------Awards----------------------------
 \section{Awards}
   \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Louisiana Sea Grant Graduate Research Scholar}
+      {Summer 2018}{\textit{Fellowship in science communication focusing on the coastal crisis in southern Louisiana}}{}
+    
     \resumeSubheading
       {Louisiana Environmental Education Commission Grant}
       {Spring 2017}{\$1200}{}
@@ -165,14 +170,20 @@
 
 %------------------Publications---------------------------
 
+\newpage
+
 \section{Publications}
   
-
-    Formel, S. K., Mighell, K.L., Bernik, B.M., Kandalepas, D., Jarrell, E., Blum, M.J., Pardue, J., Van Bael, S.A. 
+    \textbf{Formel, S. K.}, Mighell, K.L., Bernik, B.M., Kandalepas, D., Jarrell, E., Blum, M.J., Pardue, J., Van Bael, S.A. 
     \textit{Soil Microbial Communities of Two Salt Marshes in Recovery Following an Oil Spill}. 
     manuscript in preparation.
-
-    Bayer, L. V., Batish, M., Formel, S. K., and Bratu, D. P. (2015). Single-Molecule RNA In Situ Hybridization (smFISH) and Immunofluorescence (IF) in the Drosophila Egg Chamber. 
+    \newline
+    
+    Lumibao, Candice Y., \textbf{Formel, Stephen},Elango, Vijaikrishnah,Pardue, John H., Blum, Michael, Van Bael, Sunshine A. 
+    \textit{Persisting responses of salt marsh fungal communities to the Deepwater Horizon oil spill.} Science of The Total Environment 642 (2018): 904-913.
+    \newline
+    
+    Bayer, L. V., Batish, M., \textbf{Formel, S. K.}, and Bratu, D. P. (2015). Single-Molecule RNA In Situ Hybridization (smFISH) and Immunofluorescence (IF) in the Drosophila Egg Chamber. 
     \textit{Drosophila Oogenesis: Methods and Protocols, 125-136.}
    
 
@@ -217,6 +228,10 @@
 \section{Oral Presentations}
   \resumeSubHeadingListStart
   
+    \resumeSubheading
+      {Ecological Society of America Annual Meeting}
+      {2018}{"Spatial and Temporal Comparisons of Salt Marsh Soil Microbial Communities After Oil Exposure"}{}
+      
     \resumeSubheading
       {Invited lecture to the Garden Club of America, New Orleans Chapter}
       {2017}{"Little Things Matter Too: The Potential Role of Microbes in Salt Marsh Conservation"}{}
@@ -349,3 +364,6 @@ Chicago, IL 60612\\
 
     
 \end{document}
+
+
+
