@@ -3,7 +3,7 @@
 % Original Template Author : Sourabh Bajaj
 % License : MIT
 % Document Author : Stephen K. Formel
-% Last updated : May 19, 2018
+% Last updated : May 19, 2019
 %------------------------
 
 \documentclass[hidelinks,A4,11pt]{article}
@@ -17,16 +17,28 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+
+%\usepackage{fontspec}
+%\setmainfont{Helvetica Neue Light}[
+  %ItalicFont=Helvetica Neue Light Italic,]
+
+
 \usepackage{helvet}
+
 \renewcommand*\familydefault{\sfdefault}
+
 \usepackage{array}
 \usepackage{biblatex}
 \usepackage{ragged2e}
 \usepackage{lastpage}
+\usepackage{comment}
+\usepackage{makecell}
+\usepackage[margin=.5in,headheight=15pt]{geometry}
 
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -74,7 +86,15 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingThree}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \text{\small#3} & \text{\small#4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
 
+}    
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -125,7 +145,49 @@
       {Marine Biological Laboratory - Lab of Dr. Scott Brady}{Woods Hole, MA}
       {Research Assistant}{Summers of 2013 and 2014}
   \resumeSubHeadingListEnd
+
+%----------Teaching---------------------------
+
+\section{Teaching}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheadingThree
+      {Lecturer: Molecular Biology of the Cell}{Spring 2019}
+      {Nicholls State University} {Thibodaux, LA}
+      {\makecell[tl]{Created, taught, and corrected all class materials for a 400 level class of 32 students. \\  Lectures consisted of two 80 minute lectures per week.}}{}
       
+    \resumeSubheadingThree
+      {Guest Lecture: Genomics}{Spring 2018}
+      {Tulane University} {New Orleans, LA}
+      {Introduction to Metagenomics Software and Analysis, designed and taught lab and homework}{}
+      
+    \resumeSubheadingThree
+      {Teaching Assistant: Theory and Methods in Ecology and Evolutionary Biology}
+      {Tulane University} {New Orleans, LA}
+      {Spring 2018}{Assisted with Lectures and Grading}{}
+    
+    \resumeSubheadingThree
+      {Guest Lecture: Conservation Biology}{Spring 2018}
+      {Tulane University} {New Orleans, LA}
+      {Economic Aspects of Conservation}{}
+      
+    \resumeSubheadingThree
+      {Teaching Assistant: Diversity of Life}
+      {Tulane University} {New Orleans, LA}
+      {Fall 2017}{Taught two lab sections}{}
+      
+    \resumeSubheadingThree
+      {Guest Lecture: Insect Biology}
+      {Tulane University} {New Orleans, LA}
+      {Fall 2015}{Ecosystem Services of Insects}{}
+      
+    
+     
+    \resumeSubHeadingListEnd
+
+\newpage
+
+
 %------------------Awards----------------------------
 \section{Awards}
   \resumeSubHeadingListStart
@@ -170,7 +232,7 @@
 
 %------------------Publications---------------------------
 
-\newpage
+%\newpage
 
 \section{Publications}
   
@@ -246,50 +308,87 @@
       
     \resumeSubHeadingListEnd
 
-%----------Teaching---------------------------
+%----------Data Science and Coding---------------------------
 
-\section{Teaching}
+\section{Coding and Data Science}
   \resumeSubHeadingListStart
   
-    \resumeSubheading
-      {Teaching Assistant: Diversity of Life}
-      {Fall 2017}{Taught two lab sections}{}
+    \resumeSubheadingTwo
+        {Fluent in R}
+        {}
+        
+    \resumeSubheadingTwo
+        {Proficient in Python}
+        {}
+        
+    \resumeSubheadingTwo
+        {Proficient in Latex}
+        {}
+        
+    \resumeSubheadingTwo
+        {Familiar with Perl}
+        {}
+        
+    \resumeSubheadingThree
+      {Tulane University R Fans (TURF) Board Member}
+      {Tulane University} {New Orleans, LA}
+      {Fall 2018 - Present}{\makecell[tl]{Helped organize and run meetings and lectures on using R.  \\ Meetings were open to entire university. Led workshops on use of basic R functions, \\ introduction to ggplot2, and slackr packages}}{}
       
-    \resumeSubheading
-      {Teaching Assistant: Theory and Methods in Ecology and Evolutionary Biology}
-      {Spring 2018}{Assisted with Lectures and Grading}{}
-    
-    \resumeSubheading
-      {Guest Lecture: Conservation Biology}{Spring 2018}
-      {Economic Aspects of Conservation}{}
-      
-    \resumeSubheading
-      {Guest Lecture: Insect Biology}
-      {Fall 2015}{Ecosystem Services of Insects}{}
-      
-    \resumeSubheading
-      {Guest Lecture: Genomics}{Spring 2018}
-      {Introduction to Metagenomics Software and Analysis, designed and taught lab and homework}{}
+    \resumeSubheadingThree
+      {Data Science Research Assistant}
+      {Louisiana Workforce Commission} {New Orleans, LA}
+      {Fall 2018 - Present}{\makecell[tl]{Created programmatic solutions to clean and organize frequently used data.}}{}
+  
+  \resumeSubHeadingListEnd
+  
+
+%----------Societies---------------------------
+
+\section{Societies}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheadingTwo
+      {Ecological Society of America}
+      {2015 - Present}
      
+    \resumeSubheadingTwo
+      {Society of Wetland Scientists}
+      {2015 - Present}
+    
+    \resumeSubheadingTwo
+      {Botanical Society of America}
+      {2014-Present}
+      
+    \resumeSubheadingTwo
+      {American Society of Microbiology}
+      {2016-2017}
+      
+    
+      
     \resumeSubHeadingListEnd
-
-\pagebreak
-
 %----------Service---------------------------
 
 \section{Service}
   \resumeSubHeadingListStart
   
     \resumeSubheadingTwo
+      {EEB Grad Student Association Treasurer}
+      {April 2019 - Present}
+      
+    \resumeSubheadingTwo
+      {Sci High High School Science Fair Judge}
+      {Oct 2018}
+      
+    \resumeSubheadingTwo
       {Sci High High School Science Fair Judge}
       {Oct 2017}
       
     \resumeSubheadingTwo
       {Ecolunch Seminar Coordinator}
-      {Sept 2016 to Present}
+      {Sept 2016 to May 2018}
     
     \resumeSubheadingTwo
-      {CREEP Vice President}
+      {EEB Grad Student Association Vice President}
       {Sept 2016 to Sept 2017 }
     
     \resumeSubheadingTwo
@@ -324,12 +423,17 @@
       {Nov 2015}
       
     \resumeSubHeadingListEnd
+    
+%\pagebreak
+
+  
+
 
 %----------Career Goals---------------------------
 
 \section{Career Goals}
 
-During my undergraduate career, I focused on gaining a solid grasp of lab benchwork, cellular biology and molecular genetics.  In my PhD I am integrating that knowledge with my interest in community dynamics and love for coastal wetlands. My immediate career goals are to add to our knowledge of endophyte community interactions and to contribute to wetland science and ecology by completing a thorough and rigorous study of the endophytes of \textit{Spartina alterniflora} in the Gulf of Mexico.  In the first three years of my doctoral studies I have found myself drawn to the theoretical and technical questions of the data science underlying metagenomic community analysis. Over the next 2 years I look to improve my knowledge of bioinformatics and data science and to use all of my skills to actively participate in the science community as well as in communicating science to the public, in preparation of my long-term goal to work as a research scientist and teacher. 
+During my undergraduate career, I focused on gaining a solid grasp of lab benchwork, cellular biology and molecular genetics.  In my PhD I am integrating that knowledge with my interest in community dynamics and love for coastal wetlands. My immediate career goals are to add to our knowledge of endophyte community interactions and to contribute to wetland science and ecology by completing a thorough and rigorous study of the endophytes of \textit{Spartina alterniflora} in the Gulf of Mexico.  In the first three years of my doctoral studies I have found myself drawn to the theoretical and technical questions of the data science underlying metagenomic community analysis. Over the final year of my PhD I look to improve my knowledge of bioinformatics and data science and to use all of my skills to actively participate in the science community as well as in communicating science to the public, in preparation of my long-term goal to work as a research scientist and teacher. 
 
 %----------References---------------------------
 
@@ -339,11 +443,32 @@ During my undergraduate career, I focused on gaining a solid grasp of lab benchw
 Dr. Sunshine Van Bael \newline
 504-862-8291 \newline
 svanbael@tulane.edu \newline
+Tulane University \newline
 6823 St. Charles Avenue, \newline
 Suite 400 Boggs \newline
 Department of Ecology \newline
 and Evolutionary Biology \newline
 New Orleans, LA 70118 &
+Dr. Dorothy Cheruiyot \newline
+(504) 862-8280 \newline
+dcheruiyot@tulane.edu \newline
+Tulane University \newline
+6823 St. Charles Avenue, \newline
+Suite 400 Boggs \newline
+Department of Ecology \newline
+and Evolutionary Biology \newline
+New Orleans, LA 70118 &
+Dr. Donata Henry \newline
+(504) 862-8299 \newline
+droome@tulane.edu \newline
+Tulane University \newline
+6823 St. Charles Avenue, \newline
+Suite 400 Boggs \newline
+Department of Ecology \newline
+and Evolutionary Biology \newline
+New Orleans, LA 70118 &
+
+\begin{comment}
 Dr. Diana Bratu \newline
 (212) 772-5235 \newline
 bratu@genectr.hunter.cuny.edu \newline
@@ -357,6 +482,7 @@ stbrady@uic.edu \newline
 Rm CME 567C \newline
 University of Illinois at Chicago \newline
 Chicago, IL 60612\\
+\end{comment}
 
 \end{tabular}
 
@@ -364,6 +490,3 @@ Chicago, IL 60612\\
 
     
 \end{document}
-
-
-
